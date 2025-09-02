@@ -167,3 +167,25 @@ The Airbnb Clone backend will use a relational database (PostgreSQL) with the fo
 
 - **Database Optimizations**  
   Implements indexing and caching strategies to improve performance and reduce database load. This ensures efficient data retrieval for frequently accessed information such as properties and bookings.  
+
+## API Security
+
+Securing the backend APIs is critical to protect user data, ensure privacy, and maintain trust in the Airbnb Clone platform. The following key security measures will be implemented:
+
+- **Authentication**  
+  Users must log in using secure credentials before accessing protected endpoints. This ensures that only registered users can perform actions such as booking properties or posting reviews.  
+
+- **Authorization**  
+  Access to resources is controlled based on user roles (e.g., guest, host, admin). This prevents users from performing unauthorized actions, such as editing someone else’s property or booking.  
+
+- **Rate Limiting**  
+  Limits the number of requests a user or client can make in a given time frame. This helps prevent abuse, brute-force attacks, and ensures the backend remains available and performant.  
+
+- **Data Encryption**  
+  Sensitive data, such as passwords and payment information, is encrypted both in transit (HTTPS) and at rest. This protects user information from being intercepted or compromised.  
+
+- **Input Validation & Sanitization**  
+  All inputs from users are validated and sanitized to prevent attacks like SQL injection or cross-site scripting (XSS). This ensures data integrity and protects the backend from malicious requests.  
+
+- **Logging & Monitoring**  
+  Security-related events, such as failed login attempts or suspicious activity, are logged and monitored. This allows for early detection of potential threats and faster incident response.  
