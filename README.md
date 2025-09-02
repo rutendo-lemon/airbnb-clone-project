@@ -52,3 +52,15 @@ Deployment Tools: Docker, CI/CD, and cloud platforms (to be introduced later)
 - Test API endpoints for correctness, reliability, and security.  
 - Report bugs and collaborate with the Backend Developer and DBA to fix issues.  
 - Ensure that all features meet quality standards before release.
+## Technology Stack
+
+| Technology                | Purpose in the Project |
+|---------------------------|----------------------|
+| 🐍 **Django**                | A high-level Python web framework used to build the backend and RESTful APIs. |
+| ⚡ **Django REST Framework** | Tools for creating and managing RESTful APIs efficiently. |
+| 🗄️ **PostgreSQL**            | Relational database for storing user, property, booking, payment, and review data. |
+| 📊 **GraphQL**               | Flexible query language for retrieving and manipulating backend data. |
+| 📝 **Celery**                | Handles asynchronous tasks, such as sending notifications or processing payments. |
+| 🧩 **Redis**                 | Caching system for faster data retrieval and session management. |
+| 🐳 **Docker**                | Containerization tool for consistent development, testing, and deployment environments. |
+| 🔄 **CI/CD Pipelines**       | Automates testing and deployment of code changes to ensure smooth updates and reliability. |
