@@ -63,56 +63,58 @@ The backend for the Airbnb Clone project provides a robust and scalable foundati
 ### ERD (Text-Based)
 
 ```
-Users
-+------------+ +------------+
-| id (PK) | 1 * | Properties |
-| name |---------| id (PK) |
-| email | | title |
-| password | | description|
-| phone | | price |
-+------------+ | location |
-| host_id(FK)|
-+------------+
 
 Users
-1
-|
-*
++------------+         +------------+
+| id (PK)    | 1     * | Properties |
+| name       |---------| id (PK)    |
+| email      |         | title      |
+| password   |         | description|
+| phone      |         | price      |
++------------+         | location   |
+                       | host_id(FK)|
+                       +------------+
+
+Users
+ 1
+ |
+ *
 Bookings
-+------------+ +------------+
-| id (PK) | 1 1 | Properties |
-| user_id(FK)|---------| id (PK) |
-| property_id(FK)| +------------+
-| check_in |
-| check_out |
-| status |
++------------+         +------------+
+| id (PK)    | 1     1 | Properties |
+| user_id(FK)|---------| id (PK)    |
+| property_id(FK)|      +------------+
+| check_in   |
+| check_out  |
+| status     |
 +------------+
 
 Bookings
-1
-|
-*
+ 1
+ |
+ *
 Payments
 +------------+
-| id (PK) |
+| id (PK)    |
 | booking_id(FK)|
-| amount |
+| amount     |
 | payment_date|
-| status |
+| status     |
 +------------+
 
 Users
-1
-|
-*
+ 1
+ |
+ *
 Reviews
 +------------+
-| id (PK) |
+| id (PK)    |
 | user_id(FK)|
 | property_id(FK)|
-| rating |
-| comment |
+| rating     |
+| comment    |
 +------------+
+
 ```
 
 
