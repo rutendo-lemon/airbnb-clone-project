@@ -144,3 +144,26 @@ The Airbnb Clone backend will use a relational database (PostgreSQL) with the fo
 **Relationships:**  
 - A payment is associated with a single booking.  
 - A booking can have one or multiple payments depending on the payment system.
+
+## Feature Breakdown
+
+- **User Management**  
+  This feature allows users to register, authenticate, and manage their profiles securely. It ensures that each user has a personalized experience and can interact with properties, bookings, and reviews.  
+
+- **Property Management**  
+  Hosts can create, update, retrieve, and delete property listings. This feature allows properties to be showcased with detailed descriptions, pricing, and location information for potential guests.  
+
+- **Booking System**  
+  Users can make, update, and manage bookings, including check-in and check-out dates. This system ensures that reservations are handled efficiently and accurately, preventing double-bookings.  
+
+- **Payment Processing**  
+  Handles transactions related to bookings in a secure and reliable manner. This feature records payment details and tracks the status of each payment, ensuring smooth financial operations for hosts and guests.  
+
+- **Review System**  
+  Allows users to post and manage reviews and ratings for properties they have stayed in. This feature helps build trust and transparency between hosts and guests by providing feedback and insights.  
+
+- **API Documentation**  
+  Detailed documentation of REST and GraphQL APIs ensures that developers can easily integrate with the backend. This feature improves clarity, reduces errors, and facilitates collaboration.  
+
+- **Database Optimizations**  
+  Implements indexing and caching strategies to improve performance and reduce database load. This ensures efficient data retrieval for frequently accessed information such as properties and bookings.  
