@@ -62,6 +62,7 @@ The backend for the Airbnb Clone project provides a robust and scalable foundati
 
 ### ERD (Text-Based)
 Users
+```
 +------------+         +------------+
 | id (PK)    | 1     * | Properties |
 | name       |---------| id (PK)    |
@@ -111,6 +112,7 @@ Reviews
 | rating     |
 | comment    |
 +------------+
+```
 
 ---
 
