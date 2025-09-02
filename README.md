@@ -69,3 +69,30 @@ Deployment Tools: Docker, CI/CD, and cloud platforms (to be introduced later)
 - 🐳 **Docker**: A containerization platform that packages the application and its dependencies into a container. This ensures consistency across development, testing, and production environments.  
 
 - 🔄 **CI/CD Pipelines**: Continuous Integration and Continuous Deployment pipelines automate testing, building, and deploying code. This ensures that new features or bug fixes are delivered safely, quickly, and reliably.  
+## Database Design (ERD)
+
+  |
+  | *
+  |
+  1
+
+---
+
+### **How this works:**
+- `PK` = Primary Key  
+- `FK` = Foreign Key  
+- `1` and `*` indicate the relationship: one-to-many (*1 user can have many bookings*)  
+
+---
+
+### **How to add to README.md**
+1. Open `README.md` on GitHub.  
+2. Click the **pencil icon** to edit.  
+3. Scroll to where you want the ERD and **paste the code block above**.  
+4. Commit changes with a message like `Add ERD diagram for Database Design`.  
+
+✅ This gives your README a **visual representation** of the database structure without needing an image.  
+
+If you want, I can **also create a slightly cleaner, more compact version** of this ERD so it fits nicely in the README without taking too much space.  
+
+Do you want me to do that?
