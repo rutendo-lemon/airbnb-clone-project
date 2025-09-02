@@ -22,5 +22,33 @@ Framework: Django / Flask (depending on progression)
 Database: MySQL / SQLite
 
 Version Control: Git & GitHub
-
 Deployment Tools: Docker, CI/CD, and cloud platforms (to be introduced later)
+## Team Roles
+
+### Backend Developer
+**Responsibilities:**  
+- Implement API endpoints for users, properties, bookings, payments, and reviews.  
+- Develop the business logic and integrate with the database.  
+- Ensure proper authentication, authorization, and data validation.  
+- Work closely with the Database Administrator and DevOps Engineer to optimize backend performance and deployment.
+
+### Database Administrator (DBA)
+**Responsibilities:**  
+- Design and manage the PostgreSQL database schema for users, properties, bookings, payments, and reviews.  
+- Implement indexing and caching strategies to optimize data retrieval and performance.  
+- Monitor database health, perform backups, and manage migrations.  
+- Collaborate with the Backend Developer to ensure efficient and scalable data storage.
+
+### DevOps Engineer
+**Responsibilities:**  
+- Set up, configure, and maintain deployment pipelines (CI/CD) for automated testing and deployment.  
+- Manage containerization using Docker for consistent development and production environments.  
+- Monitor backend services and ensure scalability and reliability.  
+- Handle server provisioning, cloud configurations, and integration with Redis and Celery for asynchronous tasks.
+
+### QA Engineer
+**Responsibilities:**  
+- Develop and execute test plans to ensure the backend meets functional and performance requirements.  
+- Test API endpoints for correctness, reliability, and security.  
+- Report bugs and collaborate with the Backend Developer and DBA to fix issues.  
+- Ensure that all features meet quality standards before release.
