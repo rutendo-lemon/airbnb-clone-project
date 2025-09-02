@@ -54,13 +54,18 @@ Deployment Tools: Docker, CI/CD, and cloud platforms (to be introduced later)
 - Ensure that all features meet quality standards before release.
 ## Technology Stack
 
-| Technology                | Purpose in the Project |
-|---------------------------|----------------------|
-| 🐍 **Django**                | A high-level Python web framework used to build the backend and RESTful APIs. |
-| ⚡ **Django REST Framework** | Tools for creating and managing RESTful APIs efficiently. |
-| 🗄️ **PostgreSQL**            | Relational database for storing user, property, booking, payment, and review data. |
-| 📊 **GraphQL**               | Flexible query language for retrieving and manipulating backend data. |
-| 📝 **Celery**                | Handles asynchronous tasks, such as sending notifications or processing payments. |
-| 🧩 **Redis**                 | Caching system for faster data retrieval and session management. |
-| 🐳 **Docker**                | Containerization tool for consistent development, testing, and deployment environments. |
-| 🔄 **CI/CD Pipelines**       | Automates testing and deployment of code changes to ensure smooth updates and reliability. |
+- 🐍 **Django**: A high-level Python web framework used to build the backend of the Airbnb Clone. It handles server-side logic, routing, and integration with the database, providing a solid foundation for building RESTful APIs.  
+
+- ⚡ **Django REST Framework (DRF)**: An extension of Django that simplifies building RESTful APIs. It provides tools for serialization, authentication, permissions, and request handling, making backend development faster and more secure.  
+
+- 🗄️ **PostgreSQL**: A powerful open-source relational database used to store and manage data such as user profiles, property listings, bookings, payments, and reviews. Supports complex queries, indexing, and ensures data integrity.  
+
+- 📊 **GraphQL**: A flexible query language and runtime that allows clients to request exactly the data they need. It improves efficiency by reducing over-fetching and provides a single endpoint for accessing multiple resources.  
+
+- 📝 **Celery**: A distributed task queue for handling asynchronous and scheduled tasks. In this project, Celery is used to process background jobs such as sending email notifications and handling payment processing.  
+
+- 🧩 **Redis**: An in-memory data structure store used as a cache and message broker. It helps improve performance by storing frequently accessed data and supporting Celery task queues.  
+
+- 🐳 **Docker**: A containerization platform that packages the application and its dependencies into a container. This ensures consistency across development, testing, and production environments.  
+
+- 🔄 **CI/CD Pipelines**: Continuous Integration and Continuous Deployment pipelines automate testing, building, and deploying code. This ensures that new features or bug fixes are delivered safely, quickly, and reliably.  
