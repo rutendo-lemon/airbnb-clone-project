@@ -66,7 +66,7 @@ The backend for the Airbnb Clone project provides a robust and scalable foundati
   Relationships: A payment is associated with a single booking; a booking can have one or multiple payments.  
 
 ### ERD (Text-Based)
-```Users
+``` Users
 +------------+ +------------+
 | id (PK) | 1 * | Properties |
 | name |---------| id (PK) |
@@ -115,10 +115,7 @@ Reviews
 | property_id(FK)|
 | rating |
 | comment |
-+------------+```
-
-
----
++------------+ ```
 
 ## Feature Breakdown
 
