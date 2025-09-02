@@ -69,30 +69,78 @@ Deployment Tools: Docker, CI/CD, and cloud platforms (to be introduced later)
 - 🐳 **Docker**: A containerization platform that packages the application and its dependencies into a container. This ensures consistency across development, testing, and production environments.  
 
 - 🔄 **CI/CD Pipelines**: Continuous Integration and Continuous Deployment pipelines automate testing, building, and deploying code. This ensures that new features or bug fixes are delivered safely, quickly, and reliably.  
-## Database Design (ERD)
 
-  |
-  | *
-  |
-  1
+## Database Design
+
+The Airbnb Clone backend will use a relational database (PostgreSQL) with the following key entities:
+
+### **1. Users**
+**Key Fields:**  
+- `id` (Primary Key)  
+- `name`  
+- `email` (unique)  
+- `password`  
+- `phone_number`  
+
+**Relationships:**  
+- A user can have multiple bookings.  
+- A user can leave multiple reviews.  
+- A user can own multiple properties if they are a host.  
 
 ---
 
-### **How this works:**
-- `PK` = Primary Key  
-- `FK` = Foreign Key  
-- `1` and `*` indicate the relationship: one-to-many (*1 user can have many bookings*)  
+### **2. Properties**
+**Key Fields:**  
+- `id` (Primary Key)  
+- `title`  
+- `description`  
+- `price_per_night`  
+- `location`  
+- `host_id` (Foreign Key referencing Users)  
+
+**Relationships:**  
+- A property belongs to a user (host).  
+- A property can have multiple bookings.  
+- A property can have multiple reviews.  
 
 ---
 
-### **How to add to README.md**
-1. Open `README.md` on GitHub.  
-2. Click the **pencil icon** to edit.  
-3. Scroll to where you want the ERD and **paste the code block above**.  
-4. Commit changes with a message like `Add ERD diagram for Database Design`.  
+### **3. Bookings**
+**Key Fields:**  
+- `id` (Primary Key)  
+- `user_id` (Foreign Key referencing Users)  
+- `property_id` (Foreign Key referencing Properties)  
+- `check_in_date`  
+- `check_out_date`  
+- `status` (e.g., confirmed, canceled)  
 
-✅ This gives your README a **visual representation** of the database structure without needing an image.  
+**Relationships:**  
+- A booking belongs to one user and one property.  
 
-If you want, I can **also create a slightly cleaner, more compact version** of this ERD so it fits nicely in the README without taking too much space.  
+---
 
-Do you want me to do that?
+### **4. Reviews**
+**Key Fields:**  
+- `id` (Primary Key)  
+- `user_id` (Foreign Key referencing Users)  
+- `property_id` (Foreign Key referencing Properties)  
+- `rating` (e.g., 1-5 stars)  
+- `comment`  
+
+**Relationships:**  
+- A review belongs to one user and one property.  
+- A property can have multiple reviews from different users.  
+
+---
+
+### **5. Payments**
+**Key Fields:**  
+- `id` (Primary Key)  
+- `booking_id` (Foreign Key referencing Bookings)  
+- `amount`  
+- `payment_date`  
+- `payment_status` (e.g., completed, pending, failed)  
+
+**Relationships:**  
+- A payment is associated with a single booking.  
+- A booking can have one or multiple payments depending on the payment system.
